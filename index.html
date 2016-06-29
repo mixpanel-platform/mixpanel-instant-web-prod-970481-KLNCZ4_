@@ -47,128 +47,79 @@
 <tr>
 <td><strong>Social Share</strong></td>
 <td>User shares a piece of content</td>
+<td><strong>Country</strong></td>
+<td>User's country, parsed from IP</td>
+<td>Argentina</td>
+</tr>
+<tr>
+<td><strong>Video Ended</strong></td>
+<td>Sent when a video is 100% completed</td>
 <td><strong>Current URL</strong></td>
 <td>The full URL of the webpage on which the event is triggered</td>
 <td>https://dev.instant.me</td>
 </tr>
 <tr>
-<td><strong>Video Ended</strong></td>
-<td>Sent when a video is 100% completed</td>
+<td><strong>Video Paused</strong></td>
+<td>Sent when a user manually pauses a video or the user unfocused the window</td>
 <td><strong>Device</strong></td>
 <td>Name of user's device, if they're on mobile web</td>
 <td>Android</td>
 </tr>
 <tr>
-<td><strong>Video Paused</strong></td>
-<td>Sent when a user manually pauses a video or the user unfocused the window</td>
-<td><strong>Initial Referrer</strong></td>
-<td>Referring URL at first arrival</td>
-<td>$direct</td>
-</tr>
-<tr>
 <td><strong>Video Played for Seconds</strong></td>
-<td>&nbsp;</td>
-<td><strong>Initial Referring Domain</strong></td>
-<td>Referring domain at first arrival</td>
-<td>cdn.flipboard.com</td>
-</tr>
-<tr>
-<td><strong>Video Progress</strong></td>
-<td>&nbsp;</td>
-<td><strong>Library Version</strong></td>
-<td>Mixpanel library used to send this data</td>
-<td>2.7.2</td>
-</tr>
-<tr>
-<td><strong>Video Rewound</strong></td>
-<td>&nbsp;</td>
-<td><strong>Operating System</strong></td>
-<td>User's operating system</td>
-<td>Linux</td>
-</tr>
-<tr>
-<td><strong>Video Started</strong></td>
-<td>User clicks the play button on a video or the video starts to autoplay or a user returns to the window after having unfocused it</td>
-<td><strong>Referrer</strong></td>
-<td>Referring URL, including your own domain</td>
-<td>android-app://com.Slack</td>
-</tr>
-<tr>
-<td><strong>&nbsp;</strong></td>
-<td>&nbsp;</td>
-<td><strong>Referring Domain</strong></td>
-<td>Referring domain, including your own domain</td>
-<td>drive.google.com</td>
-</tr>
-<tr>
-<td><strong>&nbsp;</strong></td>
-<td>&nbsp;</td>
-<td><strong>Region</strong></td>
-<td>User's region (state or province), parsed from IP</td>
-<td>Alberta</td>
-</tr>
-<tr>
-<td><strong>&nbsp;</strong></td>
-<td>&nbsp;</td>
-<td><strong>Screen Height</strong></td>
-<td>Height of the screen of the device</td>
-<td>1023</td>
-</tr>
-<tr>
-<td><strong>&nbsp;</strong></td>
-<td>&nbsp;</td>
-<td><strong>Screen Width</strong></td>
-<td>Width of the screen of the device</td>
-<td>1080</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><strong>Search Engine</strong></td>
-<td>Search engine a customer used when they first arrived at your domain</td>
-<td>bing</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
 <td>&nbsp;</td>
 <td><strong>durationSeconds</strong></td>
 <td>Length of video in seconds</td>
 <td>24.085</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
+<td><strong>Video Progress</strong></td>
 <td>&nbsp;</td>
 <td><strong>editionId</strong></td>
 <td>Edition Id of video</td>
 <td>3</td>
 </tr>
 <tr>
+<td><strong>Video Rewound</strong></td>
 <td>&nbsp;</td>
+<td><strong>Initial Referrer</strong></td>
+<td>Referring URL at first arrival</td>
+<td>$direct</td>
+</tr>
+<tr>
+<td><strong>Video Started</strong></td>
+<td>User clicks the play button on a video or the video starts to autoplay or a user returns to the window after having unfocused it</td>
+<td><strong>Initial Referring Domain</strong></td>
+<td>Referring domain at first arrival</td>
+<td>www.people.com</td>
+</tr>
+<tr>
+<td><strong>&nbsp;</strong></td>
 <td>&nbsp;</td>
 <td><strong>isMuted</strong></td>
 <td>If the video is muted or not</td>
 <td>True/False</td>
 </tr>
 <tr>
-<td>&nbsp;</td>
+<td><strong>&nbsp;</strong></td>
 <td>&nbsp;</td>
 <td><strong>isSponsored</strong></td>
 <td>&nbsp;</td>
 <td>True/False</td>
 </tr>
 <tr>
+<td><strong>&nbsp;</strong></td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><strong>Country</strong></td>
-<td>User's country, parsed from IP</td>
-<td>Argentina</td>
+<td><strong>Library Version</strong></td>
+<td>Mixpanel library used to send this data</td>
+<td>2.7.2</td>
 </tr>
 <tr>
+<td><strong>&nbsp;</strong></td>
 <td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><strong>Search Keyword</strong></td>
-<td>&nbsp;</td>
-<td>instant.me</td>
+<td><strong>Operating System</strong></td>
+<td>User's operating system</td>
+<td>Linux</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -187,6 +138,13 @@
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td><strong>progressSeconds</strong></td>
+<td>The number of seconds of a video a user has watched</td>
+<td>15.6784</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 <td><strong>providerId</strong></td>
 <td>Brightcove Tag</td>
 <td>4980698796001</td>
@@ -194,9 +152,58 @@
 <tr>
 <td>&nbsp;</td>
 <td>&nbsp;</td>
+<td><strong>Referrer</strong></td>
+<td>Referring URL, including your own domain</td>
+<td>android-app://com.Slack</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><strong>Referring Domain</strong></td>
+<td>Referring domain, including your own domain</td>
+<td>drive.google.com</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><strong>Region</strong></td>
+<td>User's region (state or province), parsed from IP</td>
+<td>Alberta</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 <td><strong>rewindSeconds</strong></td>
 <td>The number of seconds rewound on the video</td>
 <td>5</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><strong>Screen Height</strong></td>
+<td>Height of the screen of the device</td>
+<td>1023</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><strong>Screen Width</strong></td>
+<td>Width of the screen of the device</td>
+<td>1080</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><strong>Search Engine</strong></td>
+<td>Search engine a customer used when they first arrived at your domain</td>
+<td>Google</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><strong>Search Keyword</strong></td>
+<td>&nbsp;</td>
+<td>instant.me</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -217,7 +224,7 @@
 <td>&nbsp;</td>
 <td><strong>title</strong></td>
 <td>Title of the video</td>
-<td>Baby Koalas Stupid Cute</td>
+<td>Twitter</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
@@ -232,13 +239,6 @@
 <td><strong>videoType</strong></td>
 <td>Either normal html video or autoplaying on iOS ("canvas")</td>
 <td>canvas</td>
-</tr>
-<tr>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td><strong>progressSeconds</strong></td>
-<td>The number of seconds of a video a user has watched</td>
-<td>15.6784</td>
 </tr>
 </tbody>
 </table>
